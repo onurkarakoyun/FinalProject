@@ -46,7 +46,7 @@ public class GuardAI : MonoBehaviour
         if (visionArea != null)
         {
             // FlipX ile değil rotation ile yön veriyoruz
-            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg - 90f;
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg - 0f;
             visionArea.localRotation = Quaternion.Euler(0, 0, angle);
         }
 
